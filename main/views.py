@@ -6,9 +6,14 @@ from django.http import HttpResponse
 
 
 def index(request):
-    data = {"title": "Index HTML", "content": "Hello from index.html"}
+    data = {"title": "Main Page", "content": "Магазин мебели HOME"}
     return render(request, "main/index.html", data)
 
 
 def about(request):
-    return HttpResponse("About page")
+    data = {
+        "title": "Main Page", 
+        "content": "Магазин мебели HOME",
+        "text_on_page": "teks bu magazyn hakynda bu nahili gowy magazyn"
+    }
+    return render(request, 'main/about.html', data)

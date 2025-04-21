@@ -24,3 +24,6 @@ db.sqlite3
 # Файлы, специфичные для ОС (будьте осторожны с ними)
 .DS_Store
 Thumbs.db
+
+# Файлы VS code
+.vscode
